@@ -32,25 +32,24 @@ permalink: 'contact/'
 
     <section id="cs-contact">
         <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
+            <form id="cs-form" name="Contact Form" netlify>
                 <div class="cs-content">
                     <span class="cs-topper">Contact Us</span>
                     <h2 class="cs-title">Fill Out The Form Below</h2>
                 </div>
                 <label>
-                    Name
                     <input required type="text" id="name" name="name" placeholder="Name">
                 </label>
                 <label>
-                    Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
+                    <input required type="email" id="email" name="email" placeholder="Email">
                 </label>
                 <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
+                    <input required type="tel" id="phone" name="phone" placeholder="Phone">
+                </label>
+                <label>
+                    <input required type="text" id="business" name="business" placeholder="Business">
                 </label>
                 <label class="cs-label-message">
-                    Message
                     <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
                 </label>
                 <button class="cs-button-solid" type="submit">Submit</button>
