@@ -136,6 +136,9 @@
         .cs-button-solid {
             margin-top: calc(32 / 16 * 1rem);
         }
+        #james {
+            border-radius: 20%;
+        }
     }
 }
 
@@ -155,6 +158,11 @@
 
         .cs-right {
             margin: 0;
+        }
+        #james {
+            width: calc(522 / 16 * 1em);
+            height: calc(581 / 16 * 1em);
+            border-radius: 20%;
         }
     }
 }

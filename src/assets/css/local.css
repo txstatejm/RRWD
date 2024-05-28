@@ -297,7 +297,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #services-942 {
-    background-color: var(--dark);
+    background-color: var(--medium);
   }
   body.dark-mode #services-942 .cs-title,
   body.dark-mode #services-942 .cs-text,
