@@ -27,12 +27,12 @@
             width: calc(631 / 16 * 1em);
             height: calc(636 / 16 * 1em);
             position: relative;
+            
         }
 
         .cs-picture {
             border-radius: calc(24 / 16 * 1em);
             display: block;
-            position: absolute;
             /* clips img tag corners */
             overflow: hidden;
             img {

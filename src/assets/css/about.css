@@ -28,7 +28,6 @@
   #sbs .cs-picture {
     border-radius: 1.5em;
     display: block;
-    position: absolute;
     /* clips img tag corners */
     overflow: hidden;
   }
