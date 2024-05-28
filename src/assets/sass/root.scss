@@ -943,7 +943,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
     #footer {
-        background: #1c1c1c;
+        background: black;
         padding: calc(84 / 16 * 1rem) 0 calc(20 / 16 * 1rem);
         font-size: min(4vw, 1.2em);
 
@@ -1184,7 +1184,7 @@
 @media only screen and (min-width: 0em) {
     body.dark-mode {
         #footer {
-            background: #061623;
+            background: black;
         }
     }
 }

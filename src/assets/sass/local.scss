@@ -110,6 +110,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #sbs-1591 {
+            background-color: black;
             .cs-title, .cs-text {
                 color: var(--bodyTextColorWhite);
             }
@@ -191,6 +192,7 @@
             justify-content: center;
             position: relative;
             z-index: 1;
+            background-color: white;
 
             &:hover {
                 .cs-h3 {
@@ -343,6 +345,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #services-942 {
+            background-color: var(--dark);
             .cs-title,
             .cs-text,
             .cs-h3,
@@ -356,7 +359,7 @@
             }
 
             .cs-item {
-                background-color: var(--medium);
+                background-color: black;
             }
 
             .cs-waves {
