@@ -1,0 +1,62 @@
+---
+title: 'About'
+description: 'About Round Rock Web Design'
+preloadImg: '/assets/images/roundrock.png'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">About Us</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/roundrock-m.png">
+            <source media="(min-width: 601px)" srcset="/assets/images/roundrock.png">
+            <img aria-hidden="true" decoding="async" src="/assets/images/roundrock.png" alt="round rock" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/james.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/james.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/james.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">Round Rock Web Design</h2>
+                <p class="cs-text">
+                    My name is James and I'm a front-end web developer. 
+                </p>
+                <p class="cs-text">
+                    I help small businesses develop unique websites that are tailored to their needs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

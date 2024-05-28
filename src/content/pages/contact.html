@@ -1,0 +1,67 @@
+---
+title: 'Contact'
+description: 'Contact Round Rock Web Design'
+preloadImg: '/assets/images/roundrock.png'
+permalink: 'contact/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/contact.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Contact Us</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/roundrock-m.png">
+            <source media="(min-width: 601px)" srcset="/assets/images/roundrock.png">
+            <img aria-hidden="true" decoding="async" src="/assets/images/roundrock.png" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Contact Form                  -->
+    <!-- ============================================ -->
+
+    <section id="cs-contact">
+        <div class="cs-container">
+            <form id="cs-form" name="Contact Form" method="post">
+                <div class="cs-content">
+                    <span class="cs-topper">Contact Us</span>
+                    <h2 class="cs-title">Fill Out The Form Below</h2>
+                </div>
+                <label>
+                    Name
+                    <input required type="text" id="name" name="name" placeholder="Name">
+                </label>
+                <label>
+                    Email
+                    <input required type="text" id="email" name="email" placeholder="Email">
+                </label>
+                <label>
+                    Phone
+                    <input required type="text" id="phone" name="phone" placeholder="Phone">
+                </label>
+                <label class="cs-label-message">
+                    Message
+                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+                </label>
+                <button class="cs-button-solid" type="submit">Submit</button>
+            </form>
+            <div class="cs-right-section">
+                <!-- Background Image-->
+                <picture class="cs-bg-picture">
+                    <source media="(min-width: 601px)" srcset="/assets/images/roundrock.png">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/roundrock.png" alt="round rock" loading="lazy" width="2500" height="1667">
+                </picture>
+            </div>
+        </div>
+    </section>
+{% endblock %}
