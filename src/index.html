@@ -1,157 +1,231 @@
 ---
-title: 'Round Rock Web Design'
-description: 'Round Rock Web Design'
-preloadImg: '/assets/images/roundrock.png'
-permalink: '/'
+title: "Round Rock Web Design"
+description: "Round Rock Web Design"
+preloadImg: "/assets/images/roundrock.png"
+permalink: "/"
 eleventyNavigation:
   key: Home
   order: 100
 ---
 
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/local.css" />
+<link rel="stylesheet" href="/assets/css/critical.css" />
 
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="stylesheet" href="/assets/css/critical.css" />
-
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js">
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
-{% endblock %}
-
-{% block body %}
+<!-- Script for Netlify Identity -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+{% endblock %} {% block body %}
 
 <!-- ============================================ -->
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
 <section id="hero-1426">
-    <div class="cs-container">
-        <div class="cs-content">
-            <h1 class="cs-title">Round Rock Web Design</h1>
-            <p class="cs-text">
-                We help small businesses create responsive sites for all devices.
-            </p>
-            <div class="cs-button-group">
-                <a href="/contact" class="cs-button-solid">Get in Touch!</a>
-            </div>
-        </div>
+  <div class="cs-container">
+    <div class="cs-content">
+      <h1 class="cs-title">Round Rock Web Design</h1>
+      <p class="cs-text">
+        We help small businesses create responsive sites for all devices.
+      </p>
+      <div class="cs-button-group">
+        <a href="/contact" class="cs-button-solid">Get in Touch!</a>
+      </div>
     </div>
+  </div>
 
-    <!-- Background Image -->
-    <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="/assets/images/roundrock-m.png">
-        <source media="(min-width: 601px)" srcset="/assets/images/roundrock.png">
-        <img loading="lazy" decoding="async" src="/assets/images/roundrock.png" alt="field" width="1920" height="1200" aria-hidden="true">
-    </picture>
+  <!-- Background Image -->
+  <picture class="cs-background">
+    <source
+      media="(max-width: 600px)"
+      srcset="/assets/images/roundrock-m.png"
+    />
+    <source media="(min-width: 601px)" srcset="/assets/images/roundrock.png" />
+    <img
+      loading="lazy"
+      decoding="async"
+      src="/assets/images/roundrock.png"
+      alt="field"
+      width="1920"
+      height="1200"
+      aria-hidden="true"
+    />
+  </picture>
 </section>
-        
+
 <!-- ============================================ -->
 <!--                Side By Side                  -->
 <!-- ============================================ -->
 
 <section id="sbs-1591">
-    <div class="cs-container">
-        <div class="cs-image-group">
-            <!--Top left image-->
-            <picture class="cs-picture cs-picture1">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/devicemockup.png">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/devicemockup.png">
-                <img loading="lazy" decoding="async" src="/assets/images/devicemockup.png" alt="mechanic" width="413" height="500">
-            </picture>
-            <!--Top Right image-->
-            <picture class="cs-picture cs-picture2">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/iphonemockup.png">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/iphonemockup.png">
-                <img loading="lazy" decoding="async" src="/assets/images/iphonemockup.png" alt="mechanic" width="413" height="280">
-            </picture>
-        </div>
-        <div class="cs-content">
-            <span class="cs-topper">About us</span>
-            <h2 class="cs-title">Mobile-responsive design</h2>
-            <p class="cs-text">
-                Helping small businesses develop unique sites that aren't generic templates created with site builders.
-            </p>
-            <a href="" class="cs-button-solid">View Projects</a>
-        </div>
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <!--Top left image-->
+      <picture class="cs-picture cs-picture1">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/devicemockup.png"
+        />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/devicemockup.png"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/devicemockup.png"
+          alt="mechanic"
+          width="413"
+          height="500"
+        />
+      </picture>
+      <!--Top Right image-->
+      <picture class="cs-picture cs-picture2">
+        <!--Mobile Image-->
+        <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/iphonemockup.png"
+        />
+        <!--Tablet and above Image-->
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/iphonemockup.png"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/iphonemockup.png"
+          alt="mechanic"
+          width="413"
+          height="280"
+        />
+      </picture>
     </div>
+    <div class="cs-content">
+      <span class="cs-topper">About us</span>
+      <h2 class="cs-title">Mobile-responsive design</h2>
+      <p class="cs-text">
+        Helping small businesses develop unique sites that aren't generic
+        templates created with site builders.
+      </p>
+      <a href="" class="cs-button-solid">View Projects</a>
+    </div>
+  </div>
 </section>
-      
+
 <!-- ============================================ -->
 <!--                  Services                    -->
 <!-- ============================================ -->
 
 <section id="services-942">
-    <div class="cs-container">
-        <!-- Left Content Section-->
-        <div class="cs-content">
-            <span class="cs-topper">Our Services</span>
-            <h2 class="cs-title">What We Provide To Our Customers</h2>
-            <p class="cs-text">
-                Hand-coded sites with your business as the focus.
-            </p>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <picture class="cs-icon-wrapper">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/front-end-programming.png" alt="hair cut" width="40" height="40">
-                </picture>
-                <h3 class="cs-h3">Responsive design</h3>
-                <p class="cs-item-text">
-                    Since most customers use their phones to search for what they need, we begin by making your site mobile-responsive, then scale up to desktop. 
-                </p>
-                <!--Background Image-->
-                <picture class="cs-background">
-                    <img loading="lazy" decoding="async" src="/assets/images/roundrock.png" alt="hair cut" width="480" height="425">
-                </picture>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon-wrapper">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/web-design.png" alt="hair cut" width="40" height="40">
-                </picture>
-                <h3 class="cs-h3">Unique site</h3>
-                <p class="cs-item-text">
-                    Many small businesses use site builders like Wix, but we create a unique site that's different from the rest.
-                </p>
-                <!--Background Image-->
-                <picture class="cs-background">
-                    <img loading="lazy" decoding="async" src="/assets/images/roundrock.png" alt="hair cut" width="480" height="425">
-                </picture>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon-wrapper">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/24-7.png" alt="hair cut" width="40" height="40">
-                </picture>
-                <h3 class="cs-h3">24/7 Support</h3>
-                <p class="cs-item-text">
-                    We offer unlimited edits and support with our subscription package. 
-                </p>
-                <!--Background Image-->
-                <picture class="cs-background">
-                    <img loading="lazy" decoding="async" src="/assets/images/roundrock.png" alt="hair cut" width="480" height="425">
-                </picture>
-            </li>
-        </ul>
+  <div class="cs-container">
+    <!-- Left Content Section-->
+    <div class="cs-content">
+      <span class="cs-topper">Our Services</span>
+      <h2 class="cs-title">What We Provide To Our Customers</h2>
+      <p class="cs-text">Hand-coded sites with your business as the focus.</p>
     </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <picture class="cs-icon-wrapper">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/front-end-programming.png"
+            alt="hair cut"
+            width="40"
+            height="40"
+          />
+        </picture>
+        <h3 class="cs-h3">Responsive design</h3>
+        <p class="cs-item-text">
+          Since most customers use their phones to search for what they need, we
+          begin by making your site mobile-responsive, then scale up to desktop.
+        </p>
+        <!--Background Image-->
+        <picture class="cs-background">
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/roundrock.png"
+            alt="hair cut"
+            width="480"
+            height="425"
+          />
+        </picture>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-icon-wrapper">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/web-design.png"
+            alt="hair cut"
+            width="40"
+            height="40"
+          />
+        </picture>
+        <h3 class="cs-h3">Unique site</h3>
+        <p class="cs-item-text">
+          Many small businesses use site builders like Wix, but we create a
+          unique site that's different from the rest.
+        </p>
+        <!--Background Image-->
+        <picture class="cs-background">
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/roundrock.png"
+            alt="hair cut"
+            width="480"
+            height="425"
+          />
+        </picture>
+      </li>
+      <li class="cs-item">
+        <picture class="cs-icon-wrapper">
+          <img
+            class="cs-icon"
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/24-7.png"
+            alt="hair cut"
+            width="40"
+            height="40"
+          />
+        </picture>
+        <h3 class="cs-h3">24/7 Support</h3>
+        <p class="cs-item-text">
+          We offer unlimited edits and support with our subscription package.
+        </p>
+        <!--Background Image-->
+        <picture class="cs-background">
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/assets/images/roundrock.png"
+            alt="hair cut"
+            width="480"
+            height="425"
+          />
+        </picture>
+      </li>
+    </ul>
+  </div>
 </section>
-                                
 
-    {% include 'components/cta.html' %}
-{% endblock %}
+{% include 'components/cta.html' %} {% endblock %}
