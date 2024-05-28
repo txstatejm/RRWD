@@ -38,3 +38,18 @@ document.getElementById('dark-mode-toggle').addEventListener('click', () => {
 	// on click, check localStorage for the dark mode value, use to apply the opposite of what's saved
 	localStorage.getItem('theme') === 'light' ? enableDarkMode() : disableDarkMode();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const logo = document.getElementById('logo');
+    const swapButton = document.getElementById('dark-mode-toggle');
+    let isLogo1 = true;
+
+    swapButton.addEventListener('click', function() {
+        if (isLogo1) {
+            logo.src = '../assets/images/logo-white.png';
+        } else {
+            logo.src = '../assets/images/logo-black.png';
+        }
+        isLogo1 = !isLogo1;
+    });
+});
