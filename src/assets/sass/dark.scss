@@ -8,7 +8,7 @@
 @media only screen and (min-width: 0em) {
     // Dark Mode Color Scheme
     :root {
-        --dark: #082032;
+        --dark: grey;
         --medium: #2c394b;
         --accent: #334756;
     }
@@ -40,5 +40,9 @@
 
     .dark {
         display: none;
+    }
+
+    .cs-logo {
+        opacity: 0.8;
     }
 }
