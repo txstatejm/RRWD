@@ -15,9 +15,9 @@ function disableDarkMode() {
 function updateLogo(theme) {
     const logo = document.getElementById('logo');
     if (theme === 'dark') {
-        logo.src = '../assets/images/logo-white.png';
+        logo.src = '../assets/images/logo-white.webp';
     } else {
-        logo.src = '../assets/images/logo-black.png';
+        logo.src = '../assets/images/logo-black.webp';
     }
 }
 
