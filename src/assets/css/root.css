@@ -59,7 +59,7 @@
     font-weight: 700;
     min-width: 10.875rem;
     margin: auto;
-    color: #fff;
+    color: black;
     padding: 0 1.5rem;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
