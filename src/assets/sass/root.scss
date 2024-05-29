@@ -589,6 +589,10 @@
             .cs-li-link {
                 color: var(--bodyTextColorWhite);
             }
+            .cs-logo {
+                /* makes it turn white */
+                filter: invert(1);
+            }
         }
     }
 }

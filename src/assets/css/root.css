@@ -489,6 +489,10 @@
   body.dark-mode #cs-navigation .cs-li-link {
     color: var(--bodyTextColorWhite);
   }
+  body.dark-mode #cs-navigation .cs-logo {
+    /* makes it turn white */
+    filter: invert(1);
+  }
 }
 /*-- -------------------------- -->
 <---     Desktop Navigation     -->
