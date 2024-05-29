@@ -177,6 +177,10 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode .cs-logo {
+    /* makes it turn white */
+    filter: invert(1);
+  }
   body.dark-mode #dark-mode-toggle .cs-sun {
     opacity: 1;
     transform: translate(-50%, -50%);

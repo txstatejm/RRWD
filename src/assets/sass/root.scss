@@ -223,6 +223,10 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
+        .cs-logo {
+            /* makes it turn white */
+            filter: invert(1);
+        }
         #dark-mode-toggle {
             .cs-sun {
                 opacity: 1;
@@ -633,6 +637,7 @@
             justify-content: center;
             align-items: center;
             z-index: 100;
+            
 
             img {
                 width: 100%;
