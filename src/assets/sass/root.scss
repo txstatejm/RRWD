@@ -708,7 +708,7 @@
 
             .cs-logo {
                 /* makes it turn white */
-                filter: grayscale(1) brightness(1000%);
+                filter: invert(1);
             }
 
             .cs-li-link {
