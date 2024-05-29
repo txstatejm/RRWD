@@ -28,7 +28,7 @@
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     font-weight: 700;
-    color: var(--primary);
+    color: black;
     text-align: inherit;
   }
   .cs-title {
@@ -71,7 +71,8 @@
     transition: background-color 0.3s, box-shadow 0.3s;
   }
   .cs-button-solid:hover {
-    background-color: #1a1a1a;
+    background-color: black;
+    color: white;
     box-shadow: 0px 0px 0px 0px var(--primary);
   }
 }
@@ -177,10 +178,6 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode .cs-logo {
-    /* makes it turn white */
-    filter: invert(1);
-  }
   body.dark-mode #dark-mode-toggle .cs-sun {
     opacity: 1;
     transform: translate(-50%, -50%);
