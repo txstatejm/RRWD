@@ -111,12 +111,17 @@
     body.dark-mode {
         #sbs-1591 {
             background-color: black;
+            
             .cs-title, .cs-text {
                 color: var(--bodyTextColorWhite);
             }
 
             .cs-text {
                 opacity: .8;
+            }
+            
+            .cs-topper {
+                color: var(--bodyTextColorWhite); 
             }
         }
     }
